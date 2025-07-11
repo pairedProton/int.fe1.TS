@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <div className="logo text-xl font-bold text-blue-600">DevFolio</div>
+        <div className="logo text-xl font-bold text-blue-600">ClayDev</div>
         
         {/* Hamburger Menu Button */}
         <button
@@ -48,13 +48,13 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-8 ">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200 "
             >
               {link.label}
             </a>

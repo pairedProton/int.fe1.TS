@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import flower from '../assets/images/flower.png'
+
 
 interface FormData {
   name: string;
@@ -15,9 +17,15 @@ interface FormErrors {
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-16 px-4">
-      <div className="max-w-xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Contact</h2>
+      <div className="max-w-xl mx-auto  flex flex-col ">
+        <h2 className="text-3xl font-bold text-center mb-8 text-gray- headings">Contact</h2>
+        <div className="w-full flex justify-end items-center" >
+
+        <img src={flower}  className="w-24 h-24 -mt-10 translate-y-10" alt="" />
+        </div>
+        <img src="" alt="" />
         <ContactForm />
+        
       </div>
     </section>
   );
@@ -59,6 +67,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
+    
     <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-xl shadow">
       <div>
         <label className="block font-semibold mb-1" htmlFor="name">Name</label>
@@ -106,6 +115,7 @@ const ContactForm: React.FC = () => {
         <p className="text-green-600 text-center font-semibold mt-2">Thank you! Your message has been sent.</p>
       )}
     </form>
+    
   );
 }
 

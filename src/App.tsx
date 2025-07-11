@@ -7,7 +7,7 @@ import Contact from "./sections/Contact.tsx";
 
 export default function App(): React.JSX.Element {
   return (
-    <div className="font-sans">
+    <div className="font-sans  bg-[#f7f7f9]">
       
       <Navbar />
       <main>
